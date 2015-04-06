@@ -2,13 +2,13 @@
   "name": "FXPageControl",
   "version": "1.4",
   "license": "zlib",
-  "summary": "Drop-in replacement for UIPageControl that adds the ability to edit the dot color, shape, shadow, size, image and spacing.",
+  "summary": "FORKED/nokiddin Drop-in replacement for UIPageControl that adds the ability to edit the dot color, shape, shadow, size, image and spacing.",
   "homepage": "https://github.com/nicklockwood/FXPageControl",
   "authors": {
     "Nick Lockwood": "support@charcoaldesign.co.uk"
   },
   "source": {
-    "git": "https://github.com/nicklockwood/FXPageControl.git",
+    "git": "https://github.com/nokiddin/FXPageControl.git",
     "tag": "1.4"
   },
   "platforms": {

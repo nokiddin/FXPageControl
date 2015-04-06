@@ -48,7 +48,7 @@
 extern const CGPathRef FXPageControlDotShapeCircle;
 extern const CGPathRef FXPageControlDotShapeSquare;
 extern const CGPathRef FXPageControlDotShapeTriangle;
-
+extern const CGPathRef FXPageControlDotShapeRing;
 
 @protocol FXPageControlDelegate;
 
@@ -75,6 +75,7 @@ IB_DESIGNABLE @interface FXPageControl : UIControl
 @property (nonatomic, strong) IBInspectable UIColor *dotShadowColor;
 @property (nonatomic, assign) IBInspectable CGFloat dotShadowBlur;
 @property (nonatomic, assign) IBInspectable CGSize dotShadowOffset;
+@property (nonatomic, assign) IBInspectable CGFloat ringThickness;
 
 @property (nonatomic, strong) IBInspectable UIImage *selectedDotImage;
 @property (nonatomic, assign) IBInspectable CGPathRef selectedDotShape;
