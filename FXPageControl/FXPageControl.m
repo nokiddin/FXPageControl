@@ -203,7 +203,7 @@ const CGPathRef FXPageControlDotShapeRing = (const CGPathRef)4;
                 }
                 else if (dotShape == FXPageControlDotShapeRing)
                 {
-                    CGContextSetLineWidth(context, self.ringThickness);
+                    CGContextSetLineWidth(context, self.ringThickness? self.ringThickness: 1.0);
                     CGContextStrokeEllipseInRect(context, CGRectMake(-dotSize / 2, -dotSize / 2, dotSize, dotSize));
                 }
                 else
@@ -248,6 +248,17 @@ const CGPathRef FXPageControlDotShapeRing = (const CGPathRef)4;
         if (_dotShape > LAST_SHAPE) CGPathRetain(_dotShape);
 		[self setNeedsDisplay];
 	}
+}
+
+
+- (void)setSelectedDotShape1:(int)selectedDotShape1
+{
+    self.selectedDotShape = (CGPathRef)(void *) selectedDotShape1;
+}
+
+- (void)setDotShape1:(int)dotShape1
+{
+    self.dotShape = (CGPathRef)(void *) dotShape1;
 }
 
 - (void)setDotSize:(CGFloat)dotSize

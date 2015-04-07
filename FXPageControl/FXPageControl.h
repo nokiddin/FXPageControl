@@ -44,7 +44,6 @@
 #define weak_delegate unsafe_unretained
 #endif
 
-
 extern const CGPathRef FXPageControlDotShapeCircle;
 extern const CGPathRef FXPageControlDotShapeSquare;
 extern const CGPathRef FXPageControlDotShapeTriangle;
@@ -67,6 +66,9 @@ IB_DESIGNABLE @interface FXPageControl : UIControl
 @property (nonatomic, assign) IBInspectable BOOL hidesForSinglePage;
 @property (nonatomic, assign, getter = isWrapEnabled) IBInspectable BOOL wrapEnabled;
 @property (nonatomic, assign, getter = isVertical) IBInspectable BOOL vertical;
+
+@property (nonatomic, assign) int dotShape1;
+@property (nonatomic, assign) int selectedDotShape1;
 
 @property (nonatomic, strong) IBInspectable UIImage *dotImage;
 @property (nonatomic, assign) IBInspectable CGPathRef dotShape;
